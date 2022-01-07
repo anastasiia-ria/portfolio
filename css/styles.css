@@ -26,6 +26,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  position: relative;
 }
 
 /** Header Styles **/
@@ -36,6 +37,7 @@ header {
   position: fixed;
   background-color: rgb(247, 247, 247);
   box-shadow: 1px 1px 10px 1px #c2c1bc;
+  z-index: 1;
 }
 
 .nav-bar {
@@ -202,7 +204,30 @@ header h1 {
   padding: 15px 0;
 }
 
-/** About Me Section Styles **/
+#projects {
+  position: relative;
+}
+#hover {
+  position: absolute;
+  top:-50px;
+  right: 50px;
+  width: 60px;
+  height: 60px;
+  animation: hover .4s infinite linear;
+}
+
+@keyframes hover {
+  from { 
+    top:-50px;
+    right: 50px;
+  }
+  to {
+    top:-47px;
+    right: 53px;
+  }
+
+}*/
+/* About Me Section Styles */
 
 #aboutme {
   max-width: 900px;
