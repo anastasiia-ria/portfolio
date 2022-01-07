@@ -4,6 +4,10 @@ body {
   background-color: rgb(247, 247, 247);
 }
 
+section {
+  padding: 50px 0;
+}
+
 h2 {
   text-align: center;
   text-transform: uppercase;
@@ -72,10 +76,6 @@ header h1 {
   font-weight: normal;
   padding-left: 20px;
   text-transform: uppercase;
-}
-
-section {
-  padding: 50px 0;
 }
 
 /** Home Section Styles **/
@@ -215,7 +215,27 @@ section {
 }
 
 /** Contact Section Styles **/
-
+#contact {
+  max-width: 950px;
+}
 #contact img {
-  width: 15px;
+  padding-right: 10px;
+}
+
+#contact ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#contact li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+#contact a {
+  display: flex;
+  align-items: center;
+  color: black;
+  text-decoration: none;
 }
