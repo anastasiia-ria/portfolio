@@ -12,11 +12,12 @@
 ## Description
 
 Portfolio website provides infromation about Anastasiia Riabets, her background, interests, and projects.
+Design was inspired by [Apple](https://www.apple.com/) system and retro pixalated terminal styles 
 
 ## Setup/Installation Requirements
 
 * [GitHub Page](https://anastasiia-ria.github.io/portfolio/)
-* [Link to clone](https://github.com/anastasiia-ria/portfolio.git)
+* [GitHub Repository](https://github.com/anastasiia-ria/portfolio)
 * Command line to clone:
   ```
   $ git clone https://github.com/anastasiia-ria/portfolio.git
@@ -24,7 +25,8 @@ Portfolio website provides infromation about Anastasiia Riabets, her background,
 
 ## Known Bugs
 
-* Contact section link is irrelevant since there is not full section for contact info.
+* Form is not functioning
+* Layout is not adjusted for small screens
 
 ## License
 
