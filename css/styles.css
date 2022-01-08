@@ -49,35 +49,48 @@ header {
   height: 50px;
 }
 
-header ul {
+.nav-bar ul {
   text-align: right;
 }
 
-header li{
+.nav-bar li{
   font-size: 0.9em;
   display: inline-block;
   text-transform: uppercase;
   min-width: 60px;
 }
 
-header a {
+.nav-bar a {
   text-decoration: none;
   color: black;
   padding: 0 20px;
 }
 
-header a:hover {
+.nav-bar a:hover {
   font-size: 1.1em;
   transition: 0.5s;
   padding: 0 17px;
 }
 
-header h1 {
+.nav-bar h1 {
   margin:0;
   font-size: 1.2em;
   font-weight: normal;
   padding-left: 20px;
   text-transform: uppercase;
+}
+
+#icons {
+  position: fixed;
+  width: 100%;
+}
+
+#icons ul {
+  width: 40px;
+  float: right;
+  list-style: none;
+  text-align: center;
+  margin-top: 5px;
 }
 
 /** Home Section Styles **/
@@ -163,7 +176,7 @@ header h1 {
   align-items: center;
   width: 300px;
   height: 300px;
-  background-color: rgba(68, 68, 68, 0.7);
+  background-color: rgba(68, 68, 68, 0.8);
 }
 
 .active {
@@ -186,12 +199,17 @@ header h1 {
   display: flex;
 }
 
+#projects {
+  background-color: white;
+}
+
 #projects h2 {
   text-align: center;
 }
 
 #projects h3{
   text-transform: uppercase;
+  margin-top: 0;
 }
 
 #projects a {
@@ -207,6 +225,7 @@ header h1 {
 #projects {
   position: relative;
 }
+
 #hover {
   position: absolute;
   top:-50px;
@@ -225,8 +244,8 @@ header h1 {
     top:-47px;
     right: 53px;
   }
+}
 
-}*/
 /* About Me Section Styles */
 
 #aboutme {
@@ -240,17 +259,24 @@ header h1 {
 }
 
 /** Contact Section Styles **/
+
 #contact {
-  max-width: 950px;
+  display: block;
+  width: 100%;
+  box-shadow: 1px 1px 10px 1px #c2c1bc;
 }
+
 #contact img {
   padding-right: 10px;
 }
 
 #contact ul {
+  margin:auto;
+  max-width: 950px;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 15px 0;
 }
 #contact li {
   list-style: none;
