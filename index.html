@@ -120,6 +120,7 @@
   </section>
 
   <secion id="contact">
+    <h2><span id="dot1">.</span><span id="dot2">.</span><span id="dot3">.</span>Contact</h2>
     <div class="container">
       <div id="contacts">
         <ul class="title">
@@ -149,14 +150,25 @@
           <li>Portland, OR</li>
         </ul>
       </div>
-      <div>
+      <div id="form">
         <form>
-          <input type="text" placeholder="Name">
-          <input type="text" placeholder="Email">
-          <textarea name="Message" id="Message" rows="5"></textarea>
+          <input name="name" type="text" placeholder="name">
+          <input name="phone" type="text" placeholder="phone">
+          <input name="email" type="text" placeholder="email">
+          <textarea name="message" placeholder="message" id="message" rows="5"></textarea>
+          <input type="submit" id="submit">
         </form>
       </div>
     </div>
   </secion>
+  <footer>
+    <div>
+      &copy;
+      <span id="copyright">
+          <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+      </span>
+      Anastasiia Riabets
+  </div>
+  </footer>
 </body>
 </html>

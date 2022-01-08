@@ -339,7 +339,6 @@ header {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top;
-  background-color: #ffffff;
   padding: 30px;
   border-radius: 10px;
 }
@@ -362,7 +361,7 @@ header {
 }
 
 .title li {
-  padding:3px 10px;
+  padding:3px 10px 3px 30px;
 }
 
 .info {
@@ -370,7 +369,7 @@ header {
 }
 
 .info li {
-  padding:3px 0;
+  padding:3px 30px 3px 0;
 }
 
 #gr_circle {
@@ -378,47 +377,73 @@ header {
   display: block;
   border-radius: 25px;
   border-bottom: none;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
 #name {
-  padding-bottom: 57px;
+  padding-bottom: 52px;
   border-bottom: none;
 }
+
+form {
+  background-image: url("../img/message_bar_sm.png");
+  background-color: #242424;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  padding: 45px 30px 30px;
+  border-radius: 10px;
+  display:flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+input, textarea {
+  width: 300px;
+  background-color: #242424;
+  border: #33FF33 solid .1px;
+  padding: 10px;
+  margin: 5px;
+  color: #33FF33;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 10px;
+  border-radius: 5px;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #33FF33;
+  font-family: 'Press Start 2P', monospace;
+}
+
+input:focus::placeholder, textarea:focus::placeholder {
+  color: #242424;
+}
+
+#submit {
+  float: right;
+  width: 100px;
+  text-transform: lowercase;
+}
+
+#submit:hover {
+  background-color: #33FF33;
+  color: #242424;
+}
 /** Footer Section Styles **/
-/*
-#contact {
+
+footer {
   display: block;
   width: 100%;
   box-shadow: -1px -1px 10px 1px #302f2e;
   background-color: #242424;
-  color: #33FF33;
 }
 
-#contact img {
-  padding-right: 10px;
-}
-
-#contact ul {
+footer div {
   margin:auto;
-  max-width: 950px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  max-width: 850px;
   padding: 15px 0;
-}
-
-#contact li {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  padding: 5px 0;
-}
-
-#contact a {
-  display: flex;
-  align-items: center;
   color: #33FF33;
-  text-decoration: none;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 9px;
 }
-*/
