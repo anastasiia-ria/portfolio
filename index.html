@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
   <link rel="stylesheet" href="css/styles.css"> 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,7 +14,7 @@
       <h1>Anastasiia Riabets</h1>
       <ul>
         <li>
-          <a href="#short_disc">Home</a>
+          <a href="#home">Home</a>
         </li>
         <li>
           <a href="#projects">Projects</a>
@@ -30,45 +29,46 @@
     </div>
   </header>
 
-  <section id="short_disc">
-    <div id="icons">
-      <ul>
-        <li>
-          <a href="mailto:anastasiia.ria@gmail.com" target="_blank">
-            <img src="img/icons/mail.png" alt="Mail Icon">
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/anastasiia-ria" target="_blank">
-            <img src="img/icons/github.png" alt="GitHub Icon">
-          </a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/anastasiia_ri/" target="_blank">
-            <img src="img/icons/instagram.png" alt="Instagram Icon">
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div>
-      <img src="img/anastasiia.jpg" alt="Anastasiia Riabets" width="100%" 
-      max-width="400px">
-    </div>
-    <div class="terminal">
-      <p>> Hi!<br>> My name is Anastasiia.<br>> I am a student at Epicodus.<br>> Here are some things<br>> about me <span id="dot1">.</span><span id="dot2">.</span><span id="dot3">.</span></p>
+  <section id="home">
+    <div class="container">
+      <div id="icons">
+        <ul>
+          <li>
+            <a href="mailto:anastasiia.ria@gmail.com" target="_blank">
+              <img src="img/icons/mail.png" alt="Mail Icon">
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/anastasiia-ria" target="_blank">
+              <img src="img/icons/github.png" alt="GitHub Icon">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/anastasiia_ri/" target="_blank">
+              <img src="img/icons/instagram.png" alt="Instagram Icon">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <img src="img/anastasiia.jpg" alt="Anastasiia Riabets" width="100%" max-width="400px">
+      </div>
+      <div class="terminal">
+        <p>> hi!<br>> my name is Anastasiia.<br>> i am a student at Epicodus.<br>> here are some things<br>> about me<span id="dot1">.</span><span id="dot2">.</span><span id="dot3">.</span></p>
+      </div>
     </div>
   </section>
 
   <section id="projects">
     <h2><span id="dot1">.</span><span id="dot2">.</span><span id="dot3">.</span>Projects</h2>
     <div class="container">
-      <span id="hover"><img src="img/icons/direction_gr.png" width="60px"></span>
+      <span id="pointer"><img src="img/icons/direction_gr.png" width="60px"></span>
       <div class="project_text">
         <h3>> Animal Shelter</h3>
-        <a href="https://anastasiia-ria.github.io/animal-shelter/ target="_blank"">> GitHub Page</a>
+        <a href="https://anastasiia-ria.github.io/animal-shelter/" target="_blank"> GitHub Page</a>
       </div>
-      <div id="shelter" class="active">
-        <div class="overlay">
+      <div id="shelter" class="active" tabindex="1">
+        <div class="overlay" tabindex="1">
           <p><strong>Animal Shelter</strong> website shows images and short description of different pets. It uses HTML and CSS languages.</p>
         </div>
       </div>
@@ -77,10 +77,10 @@
     <div class="container">
       <div class="project_text">
         <h3>> Interior Design</h3>
-        <a href="https://anastasiia-ria.github.io/interior-design/ target="_blank"">> GitHub Page</a>
+        <a href="https://anastasiia-ria.github.io/interior-design/" target="_blank"> GitHub Page</a>
       </div>
-      <div id="design" class="active">
-        <div class="overlay">
+      <div id="design" class="active" tabindex="1">
+        <div class="overlay" tabindex="1">
           <p><strong>Interior Design</strong> website shows different stages of work done by some Decorator. It uses HTML and CSS languages.</p>
         </div>
       </div>
@@ -89,10 +89,10 @@
     <div class="container">
       <div class="project_text">
         <h3>> Pets</h3>
-        <a href="https://anastasiia-ria.github.io/pet/ target="_blank"">> GitHub Page</a>
+        <a href="https://anastasiia-ria.github.io/pet/" target="_blank"> GitHub Page</a>
       </div>
-      <div id="pets" class="active">
-        <div class="overlay">
+      <div id="pets" class="active" tabindex="1">
+        <div class="overlay" tabindex="1">
           <p><strong>Pets</strong> website describes mine and Riley's pets, provides their pictures and some facts. It uses HTML and CSS languages.</p>
         </div>
       </div>
@@ -113,29 +113,27 @@
         </p>
       </div>
       <div>
-        <img src="img/emoji.png" alt="Anastasiia's Emoji" width="100%" 
-        max-width="400px">
+        <img src="img/emoji.png" alt="Anastasiia's Emoji" width="100%" max-width="400px">
       </div>
     </div>
   </section>
-
   <secion id="contact">
     <h2><span id="dot1">.</span><span id="dot2">.</span><span id="dot3">.</span>Contact</h2>
     <div class="container">
       <div id="contacts">
+        <div id="contact_img">
+          <span id="gr_circle">
+            <img src="img/memoji_smile.png" width="60px" alt="Anastasiia's Memoji">
+          </span>
+        </div>
+        <h4>Anastasiia Riabets</h4>
         <ul class="title">
-          <li> 
-            <span id="gr_circle">
-              <img src="img/memoji_smile.png" width="50px" alt="Anastasiia's Memoji">
-            </span>
-          </li>
           <li>phone</li>
           <li>email</li>
           <li>github</li>
           <li>location</li>
         </ul>
         <ul class="info">
-          <li id="name">Anastasiia Riabets</li>
           <li>(323) 823-5440</li>
           <li>
             <a href="mailto:anastasiia.ria@gmail.com" target="_blank">
@@ -165,10 +163,10 @@
     <div>
       &copy;
       <span id="copyright">
-          <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+        <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
       </span>
       Anastasiia Riabets
-  </div>
+    </div>
   </footer>
 </body>
 </html>
