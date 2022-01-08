@@ -87,12 +87,16 @@ header {
 
 #icons ul {
   width: 40px;
+  display: block;
   float: right;
   list-style: none;
   text-align: center;
-  margin-top: 5px;
+  margin-top: 50px;
 }
 
+#icons img {
+  width: 35px;
+}
 /** Home Section Styles **/
 
 #short_disc {
@@ -113,7 +117,7 @@ header {
   font-size:10px;
   margin:80px;
   font-family: 'Press Start 2P', monospace;
-  color: rgb(39, 204, 39);
+  color: #33FF33;
 }
 
 .terminal {
@@ -156,17 +160,17 @@ header {
 /** Projects Section Styles **/
 
 #design {
-  background-image: url("../img/interior-design.jpg");
+  background-image: url("../img/interior-design.png");
   background-size: cover;
 }
 
 #shelter {
-  background-image: url("../img/animal-shelter.jpg");
+  background-image: url("../img/animal-shelter.png");
   background-size: cover;
 }
 
 #pets {
-  background-image: url("../img/pet.jpg");
+  background-image: url("../img/pets.png");
   background-size: cover;
 }
 
@@ -174,14 +178,19 @@ header {
   display: none;
   justify-content: center;
   align-items: center;
-  width: 300px;
-  height: 300px;
+  width: 275px;
+  height: 275px;
   background-color: white;
+  border: #33FF33 solid 5px;
+  border-radius: 10px;
 }
 
 .active {
   width: 300px;
   height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .active p {
@@ -193,36 +202,46 @@ header {
   display: flex;
 }
 
+.project_text {
+  width: 320px;
+}
 .project_text:hover + .active .overlay{
   display: flex;
 }
 
 #projects {
-  background-image: url("../img/terminal_lg.png");
-  background-size: cover;
+  background-image: url("../img/terminal_bar.png");
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
+  background-color: #242424;
+  max-width: 950px;
+  margin: auto;
 }
 
 #projects h2 {
   text-align: center;
-  color: white;
+  font-family: 'Press Start 2P', monospace;
+  color: #33FF33
 }
 
 #projects h3{
-  color: white;
+  font-family: 'Press Start 2P', monospace;
+  color: #33FF33;
   text-transform: uppercase;
   margin-top: 0;
 }
 
 #projects a {
   text-align: center;
-  color: white;
+  font-family: 'Press Start 2P', monospace;
+  color: #33FF33;
   text-decoration: none;
 }
 
 #projects .container {
   padding: 15px 0;
+  border-bottom: #33FF33 1px dashed;
 }
 
 #projects {
@@ -271,6 +290,7 @@ header {
 
 #contact img {
   padding-right: 10px;
+  width: 35px;
 }
 
 #contact ul {
@@ -286,6 +306,7 @@ header {
   list-style: none;
   display: flex;
   align-items: center;
+  padding: 5px 0;
 }
 
 #contact a {
