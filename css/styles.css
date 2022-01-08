@@ -63,7 +63,7 @@ header {
 
 .nav-bar a {
   text-decoration: none;
-  color: black;
+  color: #1c1c1e;
   padding: 0 20px;
 }
 
@@ -170,6 +170,7 @@ header {
 /** Projects Section Styles **/
 
 #projects {
+  position: relative;
   background-image: url("../img/terminal_bar.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -228,10 +229,6 @@ header {
   }
 }
 
-#projects {
-  position: relative;
-}
-
 .project_text {
   width: 320px;
 }
@@ -262,9 +259,9 @@ header {
   width: 275px;
   height: 275px;
   background-color: white;
-  border: #33FF33 dashed 5px;
+  border: #33FF33 solid 5px;
   border-radius: 10px;
-  color: black;
+  color: #1c1c1e;
 }
 
 .active {
@@ -333,6 +330,63 @@ header {
 
 /** Contact Section Styles **/
 
+#contacts {
+  display:flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-image: url("../img/contacts_bar_sm.png");
+  background-color: white;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+#contacts li {
+  list-style:none;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  border-bottom: #e5e5ea solid .01px;
+  font-size: 13px;
+}
+
+#contacts a {
+  text-decoration: none;
+  color: #1c1c1e;
+}
+
+.title {
+  text-align: right;
+  color: #8e8e93;
+}
+
+.title li {
+  padding:3px 10px;
+}
+
+.info {
+  text-align: left;
+}
+
+.info li {
+  padding:3px 0;
+}
+
+#gr_circle {
+  background-color: #ffafad;
+  display: block;
+  border-radius: 25px;
+  border-bottom: none;
+  margin-bottom: 35px;
+}
+
+#name {
+  padding-bottom: 57px;
+  border-bottom: none;
+}
+/** Footer Section Styles **/
+/*
 #contact {
   display: block;
   width: 100%;
@@ -367,3 +421,4 @@ header {
   color: #33FF33;
   text-decoration: none;
 }
+*/
