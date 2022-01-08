@@ -13,7 +13,7 @@ h2 {
   text-transform: uppercase;
   margin-top: 30px;
   font-size: 30px;
-  font-weight: normal;
+  font-family: 'Press Start 2P', monospace;
 }
 
 ul {
@@ -23,6 +23,7 @@ ul {
 .container {
   max-width: 1050px;
   margin: auto;
+  padding: 15px 0;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -36,7 +37,7 @@ header {
   top: 0;
   position: fixed;
   background-color: rgb(247, 247, 247);
-  box-shadow: 1px 1px 10px 1px #c2c1bc;
+  box-shadow: 1px 1px 10px 1px #302f2e;
   z-index: 1;
 }
 
@@ -74,29 +75,13 @@ header {
 
 .nav-bar h1 {
   margin:0;
+  top: 0;
   font-size: 1.2em;
   font-weight: normal;
   padding-left: 20px;
   text-transform: uppercase;
 }
 
-#icons {
-  position: fixed;
-  width: 100%;
-}
-
-#icons ul {
-  width: 40px;
-  display: block;
-  float: right;
-  list-style: none;
-  text-align: center;
-  margin-top: 50px;
-}
-
-#icons img {
-  width: 35px;
-}
 /** Home Section Styles **/
 
 #short_disc {
@@ -110,21 +95,24 @@ header {
 
 #short_disc img {
   max-width: 400px;
+  border-radius: 10px;
 }
 
 #short_disc p {
   line-height:20px;
   font-size:10px;
-  margin:80px;
+  margin:90px 40px;
   font-family: 'Press Start 2P', monospace;
   color: #33FF33;
 }
 
 .terminal {
-  background-image: url("../img/terminal_sm.png");
+  background-image: url("../img/terminal_bar_sm.png");
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
+  background-color: #242424;
+  border-radius: 10px;
 }
 
 #dot1 {
@@ -157,7 +145,100 @@ header {
   100% { opacity: 1;}
 }
 
+
+#icons {
+  position: fixed;
+  width: 950px;
+  top: 42px;
+}
+
+#icons ul {
+  width: 40px;
+  display: block;
+  float: right;
+  list-style: none;
+  text-align: center;
+  padding-right:2px;
+}
+
+#icons img {
+  width: 25px;
+  padding: 3px;
+  border-radius: 0;
+}
+
 /** Projects Section Styles **/
+
+#projects {
+  background-image: url("../img/terminal_bar.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: #242424;
+  max-width: 850px;
+  margin: auto;
+  color: #33FF33;
+  border-radius: 10px;
+}
+
+#projects h3{
+  font-family: 'Press Start 2P', monospace;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+#projects a {
+  text-align: center;
+  font-family: 'Press Start 2P', monospace;
+  text-decoration: none;
+  color: #33FF33;
+}
+
+.border-l {
+  position: absolute;
+  bottom: 0;
+  left:0;
+  width:4px;
+  height:4px;
+  background: #33FF33;
+  animation: border 5s linear infinite;
+}
+
+.border-r {
+  position: absolute;
+  bottom: 0;
+  right:0;
+  width:4px;
+  height:4px;
+  background: #33FF33;
+  animation: border 5s linear infinite;
+}
+
+@keyframes border {
+  0% {
+    width: 0;
+  }
+
+  50% {
+    width: 100%;
+  }
+
+  100% {
+    width: 0;
+  }
+}
+
+#projects {
+  position: relative;
+}
+
+.project_text {
+  width: 320px;
+}
+
+.project_text:hover + .active .overlay{
+  display: flex;
+}
 
 #design {
   background-image: url("../img/interior-design.png");
@@ -181,8 +262,9 @@ header {
   width: 275px;
   height: 275px;
   background-color: white;
-  border: #33FF33 solid 5px;
+  border: #33FF33 dashed 5px;
   border-radius: 10px;
+  color: black;
 }
 
 .active {
@@ -200,52 +282,6 @@ header {
 
 .active:hover .overlay{
   display: flex;
-}
-
-.project_text {
-  width: 320px;
-}
-.project_text:hover + .active .overlay{
-  display: flex;
-}
-
-#projects {
-  background-image: url("../img/terminal_bar.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: top;
-  background-color: #242424;
-  max-width: 950px;
-  margin: auto;
-}
-
-#projects h2 {
-  text-align: center;
-  font-family: 'Press Start 2P', monospace;
-  color: #33FF33
-}
-
-#projects h3{
-  font-family: 'Press Start 2P', monospace;
-  color: #33FF33;
-  text-transform: uppercase;
-  margin-top: 0;
-}
-
-#projects a {
-  text-align: center;
-  font-family: 'Press Start 2P', monospace;
-  color: #33FF33;
-  text-decoration: none;
-}
-
-#projects .container {
-  padding: 15px 0;
-  border-bottom: #33FF33 1px dashed;
-}
-
-#projects {
-  position: relative;
 }
 
 #hover {
@@ -276,8 +312,23 @@ header {
   text-align: justify;
 }
 
-#aboutme div {
-  padding: 15px 30px 30px;
+#aboutme img {
+  width: 200px;
+}
+
+.terminal_wh {
+  background-image: url("../img/terminal_bar_sm.png");
+  background-color: white;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  padding: 30px 30px 5px;
+  width: 500px;
+  border-radius: 10px;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 10px;
+  line-height: 20px;
+  text-indent: 20px;
 }
 
 /** Contact Section Styles **/
@@ -285,12 +336,13 @@ header {
 #contact {
   display: block;
   width: 100%;
-  box-shadow: 1px 1px 10px 1px #c2c1bc;
+  box-shadow: -1px -1px 10px 1px #302f2e;
+  background-color: #242424;
+  color: #33FF33;
 }
 
 #contact img {
   padding-right: 10px;
-  width: 35px;
 }
 
 #contact ul {
@@ -312,6 +364,6 @@ header {
 #contact a {
   display: flex;
   align-items: center;
-  color: black;
+  color: #33FF33;
   text-decoration: none;
 }
