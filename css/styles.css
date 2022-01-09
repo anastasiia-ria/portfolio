@@ -2,6 +2,7 @@ body {
   margin:0;
   font-family: 'Montserrat', sans-serif;
   background-color: rgb(247, 247, 247);
+  color: #242424;
 }
 
 section {
@@ -21,7 +22,7 @@ ul {
 }
 
 .container {
-  max-width: 1050px;
+  max-width: 900px;
   margin: auto;
   padding: 15px 0;
   display: flex;
@@ -45,7 +46,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 950px;
+  max-width: 900px;
   margin: auto;
   height: 50px;
 }
@@ -62,7 +63,7 @@ header {
 
 .nav-bar a {
   text-decoration: none;
-  color: #1c1c1e;
+  color: #242424;
   padding: 0 20px;
 }
 
@@ -146,8 +147,10 @@ header {
 
 #icons {
   position: fixed;
-  width: 950px;
+  width: 900px;
   top: 42px;
+  z-index: 1;
+  margin-left: 8px;
 }
 
 #icons ul {
@@ -156,7 +159,6 @@ header {
   float: right;
   list-style: none;
   text-align: center;
-  padding-right:2px;
 }
 
 #icons img {
@@ -175,7 +177,7 @@ header {
   background-repeat: no-repeat;
   background-position: top;
   background-color: #242424;
-  max-width: 850px;
+  max-width: 900px;
   margin: auto;
   color: #33FF33;
   border-radius: 10px;
@@ -183,16 +185,17 @@ header {
 }
 
 #projects h3{
-  font-family: 'Press Start 2P', monospace;
-  text-transform: uppercase;
   margin-top: 0;
 }
 
 #projects a {
   text-align: center;
-  font-family: 'Press Start 2P', monospace;
-  text-decoration: none;
   color: #33FF33;
+}
+
+#projects li {
+  font-size: 13px;
+  padding-bottom: 15px;
 }
 
 .border-l {
@@ -230,7 +233,7 @@ header {
 }
 
 .project_text {
-  width: 320px;
+  font-family: 'Press Start 2P', monospace;
 }
 
 #design {
@@ -257,7 +260,7 @@ header {
   background-color: white;
   border: #33FF33 solid 5px;
   border-radius: 10px;
-  color: #1c1c1e;
+  color: #242424;
 }
 
 .active {
@@ -297,8 +300,9 @@ header {
 
 #pointer {
   position: absolute;
-  top:-50px;
-  right: 50px;
+  top: -45px;
+  margin-right:1%;
+  right: 0;
   width: 60px;
   height: 60px;
   animation: pointer .4s infinite linear;
@@ -306,22 +310,16 @@ header {
 
 @keyframes pointer {
   from { 
-    top:-50px;
-    right: 50px;
+    top: -45px;
+    right: 0;
   }
   to {
-    top:-47px;
-    right: 53px;
+    top:-42px;
+    right: 3px;
   }
 }
 
 /* About Me Section Styles */
-
-#aboutme {
-  max-width: 900px;
-  margin: auto;
-  text-align: justify;
-}
 
 #aboutme img {
   width: 200px;
@@ -370,7 +368,7 @@ header {
 
 #contacts a {
   text-decoration: none;
-  color: #1c1c1e;
+  color: #242424;
 }
 
 #contacts h4 {
@@ -471,7 +469,7 @@ footer {
 
 footer div {
   margin:auto;
-  max-width: 850px;
+  max-width: 900px;
   padding: 15px 0;
   color: #33FF33;
   font-family: 'Press Start 2P', monospace;
