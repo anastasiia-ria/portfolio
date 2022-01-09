@@ -147,10 +147,9 @@ header {
 
 #icons {
   position: fixed;
-  width: 900px;
+  width: 950px;
   top: 42px;
   z-index: 1;
-  margin-left: 8px;
 }
 
 #icons ul {
@@ -159,6 +158,7 @@ header {
   float: right;
   list-style: none;
   text-align: center;
+  padding-right: 2px;
 }
 
 #icons img {
@@ -177,7 +177,7 @@ header {
   background-repeat: no-repeat;
   background-position: top;
   background-color: #242424;
-  max-width: 900px;
+  max-width: 850px;
   margin: auto;
   color: #33FF33;
   border-radius: 10px;
@@ -234,6 +234,8 @@ header {
 
 .project_text {
   font-family: 'Press Start 2P', monospace;
+  width: 340px;
+  margin-left:50px;
 }
 
 #design {
