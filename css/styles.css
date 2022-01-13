@@ -114,15 +114,15 @@ header {
   box-shadow: 5px 5px 10px -5px #696868;
 }
 
-#dot1 {
+.dot1 {
   animation: dot1 1s infinite linear;
 }
 
-#dot2 {
+.dot2 {
   animation: dot2 1s infinite linear;
 }
 
-#dot3 {
+.dot3 {
   animation: dot3 1s infinite linear;
 }
 
